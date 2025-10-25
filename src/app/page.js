@@ -1,6 +1,5 @@
 import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import Service from './components/service'
-import Image from 'next/image'
 
 function Page() {
   return (
@@ -18,7 +17,7 @@ function Page() {
             <FaLinkedin />
             <FaYoutube />
           </div>
-          <Image src='/image.webp' width={32} height={3} className='w-[152px] h-[152px] mt-5 m-auto rounded-full' alt='profile'></Image>
+          <img src='image.webp' className='w-[152px] h-[152px] mt-5 m-auto rounded-full' />
         </div>
         <Service />
     </div>
