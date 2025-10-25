@@ -1,6 +1,6 @@
-import React from 'react'
 import { FaFacebook, FaLinkedin, FaYoutube } from 'react-icons/fa'
 import Service from './components/service'
+import Image from 'next/image'
 
 function Page() {
   return (
@@ -12,13 +12,13 @@ function Page() {
         <div className='text-center m-auto w-2/4 mt-20'>
           <h1 className='text-3xl text-blue-300 font-bold'>John Wick</h1>
           <h3 className='text-white text-lg mt-2'>Actor and Artist</h3>
-          <p className='text-gray-300 mt-4'>John Wick is a 2014 American neo-noir action thriller film directed by Chad Stahelski (in his directional debut from a screenlay by Derek Kolstand.</p>
+          <p className='text-gray-300 mt-4'>John Wick is a 2014 American neo-noir action thriller film directed by Chad Stahelski in his directional debut from a screenlay by Derek Kolstand.</p>
           <div className='w-[200px] flex items-center justify-between mx-auto mt-5 text-white text-2xl'>
             <FaFacebook />
             <FaLinkedin />
             <FaYoutube />
           </div>
-          <img src='image.webp' className='w-[152px] h-[152px] mt-5 m-auto rounded-full' />
+          <Image src='/image.webp' width={32} height={3} className='w-[152px] h-[152px] mt-5 m-auto rounded-full' alt='profile'></Image>
         </div>
         <Service />
     </div>
